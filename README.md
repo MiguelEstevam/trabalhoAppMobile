@@ -1,16 +1,13 @@
-# flutter_app
+# Contador Flutter
 
-A new Flutter project.
+## Descrição
+Este é um aplicativo simples desenvolvido em Flutter para demonstrar um contador. O usuário pode incrementar o valor exibido na tela e definir um lime máximo, o app tem um histórico e o usuário também pode mudar a cor de fundo.
 
-## Getting Started
+## Desenvolvedores
+- **Guilherme Santos** - Matrícula: `123100030`
+- **Miguel Estevam** - Matrícula: `12317020`
 
-This project is a starting point for a Flutter application.
+## Captura de Tela
+![Captura de Tela](screenshot.png)
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
