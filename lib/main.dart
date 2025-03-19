@@ -45,6 +45,14 @@ class _HomePageState extends State<Homepage> {
     }
   }
 
+  void decrement() {
+    if (count > 0) {
+      setState(() {
+        count--;
+      });
+    }
+  }
+
   void changeBackgroundColor() {
     setState(() {
       backgroundColor = colors[Random().nextInt(colors.length)];
@@ -131,31 +139,24 @@ class _HomePageState extends State<Homepage> {
           ],
         ),
       ),
-      floatingActionButton: Stack(
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(left: 31),
-            child: Align(
-              alignment: Alignment.bottomLeft,
-              child: FloatingActionButton(
-                onPressed: restore,
-                child: Icon(Icons.settings_backup_restore),
-              ),
-            ),
+          FloatingActionButton(
+            onPressed: restore,
+            child: Icon(Icons.settings_backup_restore),
           ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: FloatingActionButton(
-              onPressed: changeBackgroundColor,
-              child: Icon(Icons.color_lens),
-            ),
+          FloatingActionButton(
+            onPressed: decrement,
+            child: Icon(Icons.remove),
           ),
-          Align(
-            alignment: Alignment.bottomRight,
-            child: FloatingActionButton(
-              onPressed: increment,
-              child: Icon(Icons.add),
-            ),
+          FloatingActionButton(
+            onPressed: changeBackgroundColor,
+            child: Icon(Icons.color_lens),
+          ),
+          FloatingActionButton(
+            onPressed: increment,
+            child: Icon(Icons.add),
           ),
         ],
       ),
