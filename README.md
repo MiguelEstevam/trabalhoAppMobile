@@ -6,7 +6,7 @@ Este é um projeto desenvolvido para a disciplina de **Desenvolvimento Mobile** 
 ## 👨‍💻 Desenvolvedores
 
 - Miguel França
-- Guilherme Santos
+- Guilherme dos Santos
 
 ## 🛠️ Tecnologias Utilizadas
 
