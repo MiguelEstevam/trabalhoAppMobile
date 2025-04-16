@@ -1,4 +1,3 @@
-// controllers/product_controller.dart
 import '../models/product.dart';
 import '../services/file_service.dart';
 
