@@ -1,20 +1,26 @@
 import 'package:flutter/material.dart';
-import 'game_page.dart';
+import 'screens/login_screen.dart';
+import 'screens/user_screen.dart';
+import 'screens/client_screen.dart';
+import 'screens/product_screen.dart';
 
 void main() {
-  runApp(const JokenpoApp());
+  runApp(ForcaDeVendasApp());
 }
 
-class JokenpoApp extends StatelessWidget {
-  const JokenpoApp({super.key});
-
+class ForcaDeVendasApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Jokenpô',
+      title: 'Força de Vendas',
       theme: ThemeData(primarySwatch: Colors.blue),
-      home: GamePage(),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginScreen(),
+        '/users': (context) => UserScreen(),
+        '/clients': (context) => ClientScreen(),
+        '/products': (context) => ProductScreen(),
+      },
     );
   }
 }

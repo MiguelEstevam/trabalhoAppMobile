@@ -1,43 +1,58 @@
-# Jokempo (Pedra, Papel e Tesoura) - Flutter
+# 📱 Aplicativo de Força de Venda
 
-Este projeto é um jogo simples de Jokempo (Pedra, Papel e Tesoura) desenvolvido em Flutter. Ele permite que o usuário jogue contra a máquina, que faz escolhas aleatórias.
+Este é um projeto desenvolvido para a disciplina de **Desenvolvimento Mobile** utilizando **Flutter**, com foco em um Aplicativo de Força de Venda. O sistema contempla cadastros e gerenciamento de usuários, clientes e produtos, com persistência de dados em arquivos JSON.
 
-## Desenvolvedores
-- **Guilherme Santos** - Matrícula: `123100030`
-- **Miguel Estevam** - Matrícula: `12317020`
+## 👨‍💻 Desenvolvedores
 
-## 📌 Funcionalidades
-- Escolha entre Pedra, Papel ou Tesoura
-- Oponente controlado pela maquina
-- Exibição do resultado da partida
-- Interface simples e responsiva
+- Miguel França
+- Guilherme Santos
 
 ## 🛠️ Tecnologias Utilizadas
-- Flutter
-- Dart
 
-## 🚀 Como Executar o Projeto
-1. **Clone este repositório**
-   ```sh
-   git clone https://github.com/MiguelEstevam/jokempoFlutter
-   ```
-2. **Acesse o diretório do projeto**
-   ```sh
-   cd jokempo-flutter
-   ```
-3. **Instale as dependências**
-   ```sh
-   flutter pub get
-   ```
-4. **Execute o aplicativo**
-   ```sh
-   flutter run
-   ```
+- [Flutter](https://flutter.dev/) (sem uso de bibliotecas externas além das utilizadas em sala de aula)
 
-## 📱 Capturas de Tela
-![Captura de Tela](screenshot.png)
+## 📦 Funcionalidades
 
-## 📄 Licença
-Este projeto está sob a licença MIT - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- Tela de **Login** com usuário inicial (`admin` / `admin`) caso não haja cadastro.
+- Tela de **Cadastro de Usuário** com operações de **CRUD**.
+- Tela de **Cadastro de Cliente** com operações de **CRUD**.
+- Tela de **Cadastro de Produto** com operações de **CRUD**.
+- Validação de campos obrigatórios marcados com `*`.
+- Armazenamento dos dados em arquivos JSON nomeados conforme a entidade.
+
+## 🧾 Estrutura de Dados
+
+### Usuário
+- `id`* (interno)
+- `nome`*
+- `senha`*
+
+### Cliente
+- `id`*
+- `nome`*
+- `tipo`* (F - Física / J - Jurídica)
+- `cpfCnpj`*
+- `email`
+- `telefone`
+- `cep`
+- `endereco`
+- `bairro`
+- `cidade`
+- `uf`
+
+### Produto
+- `id`*
+- `nome`*
+- `unidade`* (`un`, `cx`, `kg`, `lt`, `ml`)
+- `qtdEstoque`*
+- `precoVenda`*
+- `status`* (`0` - Ativo / `1` - Inativo)
+- `custo`
+- `codigoBarra`
+
+> **Nota:** Campos obrigatórios estão marcados com `*`.
+
+
+
 
 
