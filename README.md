@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 📱 Aplicativo de Força de Venda
 
 Este é um projeto desenvolvido para a disciplina de **Desenvolvimento Mobile** utilizando **Flutter**, com foco em um Aplicativo de Força de Venda. O sistema contempla cadastros e gerenciamento de usuários, clientes e produtos, com persistência de dados em arquivos JSON.
